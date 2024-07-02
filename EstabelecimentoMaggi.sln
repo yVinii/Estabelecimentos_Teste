@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstabelecimentoMaggi", "EstabelecimentoMaggi.csproj", "{E426AB9C-437E-4CF8-BFA1-020BDC4D98D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E426AB9C-437E-4CF8-BFA1-020BDC4D98D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E426AB9C-437E-4CF8-BFA1-020BDC4D98D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E426AB9C-437E-4CF8-BFA1-020BDC4D98D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E426AB9C-437E-4CF8-BFA1-020BDC4D98D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61A22513-8231-43C1-B536-99B8C8C128E2}
+	EndGlobalSection
+EndGlobal

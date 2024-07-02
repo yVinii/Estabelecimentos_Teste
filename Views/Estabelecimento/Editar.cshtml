@@ -1,0 +1,104 @@
+﻿@model EstabelecimentoModel
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a class="btn btn-primary" role="button" asp-asp-controller="Estabelecimento" asp-action="Index">Voltar</a>
+    </div><br />
+
+    <h1>Editar Estabelecimento</h1>
+
+    <div class="form-empresa">
+        <form id="empresa-form" asp-controller="Estabelecimento" asp-action="Alterar" method="post">
+            <input type="hidden" asp-for="Id"/>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Razão Social</span>
+                <input type="text" class="form-control" asp-for="RazaoSocial" id="razaosocial" name="razaosocial" placeholder="Digite a razão social" required>
+                <span class="input-group-text"></span>
+            </div>
+
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Nome Fantasia</span>
+                <input type="text" class="form-control" asp-for="Nome" id="nome" name="nome" placeholder="Digite o nome">
+                <span class="input-group-text"></span>
+            </div>
+
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">CNPJ</span>
+                <input type="text" class="form-control" asp-for="Cnpj" id="cnpj" name="cnpj" maxlength="18" placeholder="xx.xxx.xxx/xxxx/xx" required>
+                <span id="cnpj-error" class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Email</span>
+                <input type="email" class="form-control" asp-for="Email" id="email" name="email" placeholder="Digite o e-mail">
+                <span class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Endereço</span>
+                <input type="text" class="form-control" asp-for="Endereco" id="endereco" name="endereco" placeholder="Digite o endereço">
+                <span class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Cidade</span>
+                <input type="text" class="form-control" asp-for="Cidade" id="cidade" name="cidade" placeholder="Digite a cidade">
+                <span class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Estado</span>
+                <input type="text" class="form-control" asp-for="Estado" id="estado" name="estado" placeholder="Digite o estado">
+                <span class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Telefone</span>
+                <input type="tel" class="form-control" asp-for="Telefone" id="telefone" name="telefone" maxlength="15" placeholder="(xx) xxxxx-xxxx">
+                <span id="telefone-error" class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Data de Cadastro</span>
+                <input type="date" class="form-control" asp-for="Data_Cadastro" id="data_cadastro" name="data_cadastro">
+                <span id="data_cadastro-error" class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Categoria</span>
+                <select class="form-select" id="categoria" asp-for="Categoria" name="categoria" required>
+                    <option value="">Selecione</option>
+                    <option value="Supermercado">Supermercado</option>
+                    <option value="Restaurante">Restaurante</option>
+                    <option value="Borracharia">Borracharia</option>
+                    <option value="Posto">Posto</option>
+                    <option value="Oficina">Oficina</option>
+                </select>
+                <span class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Status</span>
+                <select class="form-select" id="status" asp-for="Status" name="status" required>
+                    <option value="">Selecione</option>
+                    <option value="Ativo">Ativo</option>
+                    <option value="Inativo">Inativo</option>
+                </select>
+                <span class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Agência</span>
+                <input type="text" class="form-control" asp-for="Agencia" id="agencia" name="agencia" maxlength="5" placeholder="xxx-x" required>
+                <span id="agencia-error" class="input-group-text"></span>
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="input-group-text">Conta</span>
+                <input type="text" class="form-control" asp-for="Conta" id="conta" name="conta" maxlength="8" placeholder="xx.xxx-x" required>
+                <span id="conta-error" class="input-group-text"></span>
+            </div>
+
+
+            <input type="submit" value="Alterar" class="btn btn-outline-success">
+        </form>
+    </div>
+
+</div>
+
+<script src="~/js/mascaras.js"></script>
+<script src="~/js/validacoes.js"></script>

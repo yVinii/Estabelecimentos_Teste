@@ -1,0 +1,99 @@
+﻿@model List<EstabelecimentoModel>
+@{
+    ViewData["Title"] = "Estabelecimentos";
+    <style>
+    .container {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .listagem {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    </style>
+}
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <a class="btn btn-primary" role="button" asp-asp-controller="Estabelecimento" asp-action="Criar">Adicionar novo estabelecimento</a>
+    </div><br />
+
+
+    @if(TempData["MensagemSucesso"] != null)
+    {
+        <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>
+            @TempData["MensagemSucesso"]
+        </div>
+    }
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>
+            @TempData["MensagemErro"]
+        </div>
+    }
+
+    <br />
+
+    <h1 class="display-4">Listagem de estabelecimentos</h1><br />
+
+<div class="listagem">
+    <table class="table" id="table-estabelecimentos">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Razão Social</th>
+                <th scope="col">Nome Fantasia</th>
+                <th scope="col">CNPJ</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Endereço</th>
+                <th scope="col">Cidade</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Telefone</th>
+                <th scope="col">Data de Cadastro</th>
+                <th scope="col">Categoria</th>
+                <th scope="col">Status</th>
+                <th scope="col">Agência</th>
+                <th scope="col">Conta</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (EstabelecimentoModel estabelecimento in Model)
+                {
+                    <tr>
+                        <th scope="row">@estabelecimento.Id</th>
+                        <td>@estabelecimento.RazaoSocial</td>
+                        <td>@estabelecimento.Nome</td>
+                        <td>@estabelecimento.Cnpj</td>
+                        <td>@estabelecimento.Email</td>
+                        <td>@estabelecimento.Endereco</td>
+                        <td>@estabelecimento.Cidade</td>
+                        <td>@estabelecimento.Estado</td>
+                        <td>@estabelecimento.Telefone</td>
+                        <td>@estabelecimento.Data_Cadastro</td>
+                        <td>@estabelecimento.Categoria</td>
+                        <td>@estabelecimento.Status</td>
+                        <td>@estabelecimento.Agencia</td>
+                        <td>@estabelecimento.Conta</td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a role="button" class="btn btn-primary" asp-route-id="@estabelecimento.Id" asp-asp-controller="Estabelecimento" asp-action="Editar">Editar</a>
+                                <a role="button" class="btn btn-danger" asp-route-id="@estabelecimento.Id" asp-asp-controller="Estabelecimento" asp-action="ApagarConfirmar">Apagar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+    
+
