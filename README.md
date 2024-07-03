@@ -113,7 +113,7 @@ Navegue até o diretório do projeto:
 
 Configure as variáveis de ambiente:
 
->Altere o arquivo na raiz do projeto no arquivo Program.cs e defina as variáveis necessárias, como as credenciais do banco de dados.
+>Altere o arquivo na raiz do projeto no arquivo appsettings.json e defina as variáveis necessárias, como as credenciais do banco de dados.
 
 
 Abra o prompt do projeto
