@@ -189,7 +189,7 @@ Visual Studio 2022:
 Descrição: Visual Studio é uma IDE da Microsoft que oferece ferramentas abrangentes para desenvolvimento de aplicativos para diversas plataformas, incluindo Windows, web, móveis e nuvem.
 
 Conclusão:
-O frontend foi construído com HTML, CSS e JavaScript, aproveitando frameworks e bibliotecas populares para acelerar o desenvolvimento e garantir uma experiência visual moderna e responsiva. O Bootstrap proporcionou uma base sólida para o design. O Visual Studio 2022 serviu como ambiente de desenvolvimento eficiente, oferecendo ferramentas robustas para a criação e manutenção do código. O resultado é uma interface web interativa e funcional, projetada para atender às necessidades dos usuários finais.
+O frontend foi construído com HTML, CSS e JavaScript, aproveitando frameworks e bibliotecas populares para acelerar o desenvolvimento e garantir uma experiência visual moderna. O Bootstrap proporcionou uma base sólida para o design. O Visual Studio 2022 serviu como ambiente de desenvolvimento eficiente, oferecendo ferramentas para a criação e manutenção do código. O resultado é uma interface web interativa e funcional, projetada para atender às necessidades dos usuários finais.
 
 
 <a name="Funcionalidades"></a>
@@ -202,6 +202,132 @@ O frontend foi construído com HTML, CSS e JavaScript, aproveitando frameworks e
 ✔️ Visualização de Estabelecimentos:
     Página desenvolvida para uma tabela com informações abrangentes dos estabelecimentos.
     Tabela possui paginação, ordenação e pesquisa.
+
+
+<a name="Views do Projeto"></a>
+## Tela de Início
+Nessa tela encontramos a navegação pelo header intuitivo, e o futher que serão o padrão no layout do aplicativo web.
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/d7557e09-8f03-4b00-bf3f-a985c44770f7)
+
+
+
+## Listagem 📋
+Na tela de listagem temos controle de todos os estabelecimentos, em uma tabela que mostra seus dados, um botão para adicionar novos estabelecimentos, e para cada elemento da tabela 2 botões, editar e apagar.
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/029d08f8-a985-4748-a958-7db20d9c29e1)
+
+
+Podemos observar o serviço de paginação, como temos poucos dados não é necessária a páginação dos elementos:
+![estabelecimento_paginacao](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/d2f4c637-e5ad-47ad-9b7e-9185af7e7d1d)
+
+
+Aqui temos o serviço de pesquisa que funciona pra todo e qualquer atributo da tabela, do nome até conta:
+![estabelecimento_pesquisa](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/d79c4b73-857c-41ad-ae7d-d97d4fbb0092)
+
+
+E por fim o sistema de ordenação, seja por ordem do alfabeto até de numeração
+![estabelecimento_ordenação](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/c35c384d-899e-4432-a34f-7fbeeb090b4c)
+
+
+## Cadastro
+No cadastro encontramos o formulário e o botão de voltar, quando pressionado retornará à tela de listagem.
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/a89ae974-017c-4f7f-a149-2de6b1fb6be4)
+
+
+Em uma visão ampla da tela obtemos acesso ao formulário completo e o botão de enviar que sua função é por fim cadastrar o estabelecimento.
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/531db1bd-8830-4337-8ffe-3ca563ba936e)
+
+
+Preenchendo todos os dados em visão ampla teremos esse resultado:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/c7bd075b-d0a4-4409-9a29-2b2a37f59955)
+
+
+## Edição
+Na edição encontramos o formulário preenchido com as informações do estabelecimento selecionado, e um botão de voltar, que quando pressionado retornará à tela de listagem.
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/45af4428-08ce-4b4e-a42d-a3ea7610791b)
+
+
+Em uma visão ampla da tela obtemos acesso ao formulário preenchido e completo, e o botão de alterar que sua função é por fim cadastrar o estabelecimento.
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/4413f1fd-ce94-4fff-aaa9-1e6d4ba9dffd)
+
+
+## Apagar
+Na tela de confirmação de deletar, temos esse layout com o cnpj do estabelecimento selecionado, e com 2 botões, voltar ou confirmar a deleção
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/c8cc3620-ebd8-4051-a898-6be644a8234b)
+
+
+## Validações
+Nas telas de cadastro e edição teremos as validações
+
+
+Caso o email sejá inválido:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/7ec0ffa0-fec7-4d79-b242-7200a8b7238f)
+
+
+Caso o cnpj seja inválido:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/9cd33340-6673-4678-893e-97e87171d6b1)
+
+
+Caso o telefone seja inválido:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/c6a8f564-ad6c-4524-b664-34e664043d4e)
+
+
+Caso a data sejá inválida (futuro):
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/a69d58c5-b649-4a1a-a1f2-b712f4fdff25)
+
+
+Caso a categora seja supermercado o telefone é necessário:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/a1bfd868-1ec8-4376-8c68-4237d3b6cf40)
+
+
+Caso a agência não esteja de acordo com o padrão:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/efec20df-78f7-42f2-b8a8-76d231fd3e01)
+
+
+Caso a conta não esteja de acordo com o padrão:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/0d50039c-1d94-4f0d-ba9d-2cf7e5df5def)
+
+
+Quando o estabelecimento for cadastrado:
+![estabelecimento_cadastrado](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/4cb65c39-fee9-4f85-a887-70cd352473e2)
+
+
+Quando o estabelecimento for editado:
+![estabelecimento_editado](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/3f292779-6c57-4096-9cc3-278dd70a6054)
+
+
+Quando o estabelecimento for deletado:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/56f2a5a6-ab2d-44ff-a5a1-01185b3a6d7a)
+
+
+## Máscaras
+As telas de cadastro e edição também possuem em seu formulário o processo de máscara em alguns de seus itens
+Começando com o cnpj que obtém esse formato preenchido:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/b2406679-6655-4c93-9a9c-aa2a3e9b69ac)
+
+
+O telefone também utiliza desse recurso:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/38b49112-155f-4052-bd5c-951622ae42f8)
+
+
+A data como padrão vem nesse modelo:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/24953a49-d793-427f-b810-a36805d44b7d)
+
+
+Podendo ser selecionada com auxílio de um calendário:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/0c8e7179-f972-4748-89d7-fed544f832e2)
+
+
+Ou de maneira padrão digitando dia, mês e ano:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/33571d66-3fe2-4025-a6cf-164071a97681)
+
+
+O atributo de agência também possui o recurso:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/b2bf7f52-4a38-4d24-a3ed-a5768e3d70ed)
+
+
+E por fim o modelo de conta:
+![image](https://github.com/yVinii/Estabelecimentos_Teste/assets/117307556/bf7f124e-527e-4953-8d5e-c1aa9d93b13a)
+
 
 <a name="Distribuição"></a>
 ## 🔹 Distribuição :
