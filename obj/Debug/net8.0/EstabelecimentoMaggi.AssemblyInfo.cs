@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstabelecimentoMaggi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0881eb654b49cfa366b42e50ee6d32f886e3a5c1")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstabelecimentoMaggi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstabelecimentoMaggi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
