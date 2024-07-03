@@ -106,7 +106,7 @@ Certifique-se de seguir as instruções de instalação específicas do projeto 
 
 **Clone este repositório : :octocat:**
 
->git clone 
+>git clone https://github.com/yVinii/Estabelecimentos_Teste.git
 
 
 Navegue até o diretório do projeto:
